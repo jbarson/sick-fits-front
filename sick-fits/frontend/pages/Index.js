@@ -1,9 +1,12 @@
-import React from 'react';
+import Link from "next/link";
 
-export default function Index() {
-  return (
-    <div>
-      Hey!
-    </div>
-  )
-}
+const Home = props => (
+  <div>
+    <p>Home Page</p>
+    <Link href="/sell">
+      <a>Sell!</a>
+    </Link>
+  </div>
+);
+
+export default Home;
